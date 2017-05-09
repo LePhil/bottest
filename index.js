@@ -9,7 +9,8 @@ app.listen((process.env.PORT || 3000));
 
 // Server frontpage
 app.get('/', function (req, res) {
-    res.send('This is a TestBot Server');
+    res.send('This is a TestBot Server ' +
+             'link: <a href="https://www.facebook.com/">asd</a>');
 });
 
 // Facebook Webhook
